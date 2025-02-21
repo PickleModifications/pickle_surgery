@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+  --color1: #020617;
+  --color2: #0F172A;
+  --color3: #1E293B;
+  --color4: #334155;
+  --color5: #475569;
+  --color6: #64748B;
+  --color7: #94A3B8;
+  --color8: #CBD5E1;
+  --color9: #E2E8F0;
+  --color10: #F1F5F9;
+  --color11: #F8FAFC;
+  --success1: #16A34A;
+  --success2: #15803D;
+  --error1: #DC2626;
+  --error2: #B91C1C;
+  background: transparent;
+  color: white;
+  overflow: hidden;
+  user-select: none;
+  font-family: Montserrat;
+  color: white;
+  font-size: 1vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color4);
+  border-radius: 1vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color3);
+}
+
+#app-hud {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin:  1vw;
+}
+
+.hud-container {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/blood.png");
+  background-position: center;
+  background-size: cover;
+  width: 10vw;
+  height: 5vw;
+}
+
+.hud-container > div {
+  display: flex;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 800;
+  margin-top: 0.6vw;
+  margin-left: 1.2vw;
+  transform: rotate(349deg);
+}
+
+#app-info {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin:  1vw;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1vw 1vw;
+  column-gap: 1vw;
+}
+
+.info-container > div {
+  display: flex;
+  color: white;
+  font-size: 0.9vw;
+  font-weight: 800;
+}
